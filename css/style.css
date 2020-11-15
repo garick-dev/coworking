@@ -537,11 +537,14 @@ body {
         color: #6b6b6b; }
       .section-tariffs-inner-block_list li {
         list-style: none;
+        background: url("../img/li_icon.png") no-repeat 30px 20px;
         margin-left: -30px;
         font-family: 'Lora', serif;
         font-size: 18px;
         line-height: 50px;
         color: #000000; }
+      .section-tariffs-inner-block_list .none {
+        background: url("../img/closed.png") no-repeat 30px 20px; }
       .section-tariffs-inner-block-bottom {
         background-color: #6b6b6b36; }
         .section-tariffs-inner-block-bottom-price_description {
