@@ -891,10 +891,6 @@ body {
         @media (max-width: 768px) {
           .section-tariffs-inner-block-bottom-btn {
             font-size: 14px; } }
-    .section-tariffs-inner-block:hover {
-      transform: scale(1.008);
-      transition: 0.5s ease;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
     .section-tariffs-inner-block:first-child {
       margin-left: 30px; }
     .section-tariffs-inner-block:last-child {
