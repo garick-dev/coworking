@@ -42,6 +42,7 @@ $(".js-button-calc").click(function () {
   $(".js-overlay-calc").fadeIn();
   $(".wrapper").css("display", "none");
   $(".wrapper-gallery").css("display", "none");
+  $(".section-tariffs-inner-block").removeClass("tariffs-hover");
 });
 
 // закрыть на крестик
@@ -55,6 +56,7 @@ $(".js-close-popup").click(function () {
   $(".js-overlay-calc").fadeOut();
   $(".wrapper").css("display", "");
   $(".wrapper-gallery").css("display", "");
+  $(".section-tariffs-inner-block").addClass("tariffs-hover");
 });
 
 // закрыть по клику вне окна
@@ -73,6 +75,7 @@ $(document).mouseup(function (e) {
     $(".js-overlay-calc").fadeOut();
     $(".wrapper").css("display", "");
     $(".wrapper-gallery").css("display", "");
+    $(".section-tariffs-inner-block").addClass("tariffs-hover");
   }
 });
 
