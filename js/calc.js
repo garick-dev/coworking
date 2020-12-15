@@ -2,13 +2,11 @@ function Start() {
   var chislo = document.getElementById("chislo").value;
   var chislo = document.getElementById("chislo-new").value;
   var radios = document.getElementsByName("n2");
-
   for (var i = 0; i < radios.length; i++) {
     if (radios[i].type == "radio" && radios[i].checked) {
       var radio = parseInt(radios[i].value);
     }
   }
-
   var checkboxes = document.getElementsByClassName("checkbox_input");
   checkbox = [];
   for (var i = 0; i < checkboxes.length; i++) {
@@ -16,15 +14,11 @@ function Start() {
       checkbox[checkbox.length] = checkboxes[i].value;
     }
   }
-
   var result = chislo * radio;
-
   for (var i = 0; i < checkbox.length; i++) {
     var sum = checkbox[i];
-
     result = result + sum * chislo;
   }
-
   document.getElementById("result-1").innerHTML =
     "Итоговая стоимость: " + result + " рублей";
   document.getElementById("result-2").innerHTML =

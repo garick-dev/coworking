@@ -559,6 +559,12 @@ body {
     }
   }
 }
+.space-hover:hover {
+  transform: scale(1.008);
+  transition: 0.5s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.49);
+  cursor: pointer;
+}
 
 .section-service {
   margin-top: 110px;
@@ -599,29 +605,60 @@ body {
       &-technics {
         width: 50%;
         display: flex;
+        &:hover {
+          transform: scale(1.01);
+          transition: all 0.1s ease-out;
+          cursor: pointer;
+        }
       }
+
       &-kitchen {
         width: 50%;
         display: flex;
+        &:hover {
+          transform: scale(1.01);
+          transition: 0.1s ease-in;
+          cursor: pointer;
+        }
       }
 
       &-coffe {
         width: 50%;
         display: flex;
+        &:hover {
+          transform: scale(1.01);
+          transition: 0.1s ease-in;
+          cursor: pointer;
+        }
       }
 
       &-cupboard {
         width: 50%;
         display: flex;
+        &:hover {
+          transform: scale(1.01);
+          transition: 0.1s ease-in;
+          cursor: pointer;
+        }
       }
 
       &-internet {
         width: 50%;
         display: flex;
+        &:hover {
+          transform: scale(1.01);
+          transition: 0.1s ease-in;
+          cursor: pointer;
+        }
       }
       &-time {
         width: 50%;
         display: flex;
+        &:hover {
+          transform: scale(1.01);
+          transition: 0.1s ease-in;
+          cursor: pointer;
+        }
       }
     }
 
@@ -898,6 +935,7 @@ body {
     transform: scale(1.008);
     transition: 0.5s ease;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.49);
+    cursor: pointer;
   }
 
   @media (max-width: 1100px) {

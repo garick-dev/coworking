@@ -678,6 +678,12 @@ body {
       height: 1200px;
       justify-content: center; } }
 
+.space-hover:hover {
+  transform: scale(1.008);
+  transition: 0.5s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.49);
+  cursor: pointer; }
+
 .section-service {
   margin-top: 110px; }
   .section-service-inner {
@@ -705,21 +711,45 @@ body {
       .section-service-inner-list-technics {
         width: 50%;
         display: flex; }
+        .section-service-inner-list-technics:hover {
+          transform: scale(1.01);
+          transition: all 0.1s ease-out;
+          cursor: pointer; }
       .section-service-inner-list-kitchen {
         width: 50%;
         display: flex; }
+        .section-service-inner-list-kitchen:hover {
+          transform: scale(1.01);
+          transition: 0.1s ease-in;
+          cursor: pointer; }
       .section-service-inner-list-coffe {
         width: 50%;
         display: flex; }
+        .section-service-inner-list-coffe:hover {
+          transform: scale(1.01);
+          transition: 0.1s ease-in;
+          cursor: pointer; }
       .section-service-inner-list-cupboard {
         width: 50%;
         display: flex; }
+        .section-service-inner-list-cupboard:hover {
+          transform: scale(1.01);
+          transition: 0.1s ease-in;
+          cursor: pointer; }
       .section-service-inner-list-internet {
         width: 50%;
         display: flex; }
+        .section-service-inner-list-internet:hover {
+          transform: scale(1.01);
+          transition: 0.1s ease-in;
+          cursor: pointer; }
       .section-service-inner-list-time {
         width: 50%;
         display: flex; }
+        .section-service-inner-list-time:hover {
+          transform: scale(1.01);
+          transition: 0.1s ease-in;
+          cursor: pointer; }
     @media (max-width: 1100px) {
       .section-service-inner-list {
         width: 100%; } }
@@ -905,7 +935,8 @@ body {
   .section-tariffs .tariffs-hover:hover {
     transform: scale(1.008);
     transition: 0.5s ease;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.49); }
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.49);
+    cursor: pointer; }
   @media (max-width: 1100px) {
     .section-tariffs-inner {
       flex-wrap: wrap; } }
