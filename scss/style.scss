@@ -136,15 +136,12 @@ body {
 
       label {
         display: block;
-        width: 100%;
-        line-height: 50px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50px;
+        height: 50px;
 
-        font-weight: 700;
-        font-size: 16px;
-        @include font-roboto();
-        color: #ffffff;
-
-        text-align: center;
         cursor: pointer;
       }
 
@@ -1644,18 +1641,31 @@ body {
     }
     &_image {
       padding: 30px;
-      img {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      img:first-child {
         width: 250px;
+        margin-bottom: 30px;
       }
+      img:last-child {
+        width: 50px;
+      }
+
       img:hover {
         transform: scale(1.029);
         transition: all 1s ease;
       }
     }
+
     @media (max-width: 800px) {
       &_image {
         order: -1;
-        img {
+        img:first-child {
+          width: 70%;
+        }
+        img:last-child {
           width: 70%;
         }
       }
